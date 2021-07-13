@@ -1,0 +1,13 @@
+<%- include('includes/header') -%>
+<h4 style="text-align: center;">MongoDB Data</h4>
+<div style="display: flex; align-items: center; justify-content: center">
+  <div>
+    <% categories.forEach((category) => { %>
+    <ul>
+      <%= category.CategoryID %> - <%= category.CategoryName%> - <%= category.Description %>
+    </ul>
+    <% }) %>
+  </div>
+</div>
+
+<%- include('includes/footer') -%>
